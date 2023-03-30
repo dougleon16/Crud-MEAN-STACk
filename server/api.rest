@@ -1,0 +1,30 @@
+###
+GET http://localhost:3000/api/employees/
+
+###
+POST http://localhost:3000/api/employees/
+content-Type: application/json
+
+{
+    "name": "Douglas Leon",
+    "office": "Panama",
+    "position": "Jr.Developer",
+    "salary": 60000
+}
+
+###
+GET http://localhost:3000/api/employees/641baf5e011fe3f555f88ba1
+
+###
+DELETE  http://localhost:3000/api/employees/641baf8a6dac9a1da9868ecc
+
+###
+PUT http://localhost:3000/api/employees/6423bf5c90f5be377c128092
+content-Type: application/json
+
+{
+    "name": "Luis Ortega[Actualizado]",
+    "office": "Panama",
+    "position": "Snr.Developer",
+    "salary": 80000
+}

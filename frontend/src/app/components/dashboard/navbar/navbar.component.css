@@ -1,0 +1,13 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+}
+span {
+  cursor: pointer;
+  font-weight: bold;
+}

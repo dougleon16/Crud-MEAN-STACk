@@ -1,0 +1,69 @@
+<app-navbar></app-navbar>
+
+<form
+  class="form"
+  autocomplete="off"
+  #employeeForm="ngForm"
+  (ngSubmit)="addEmployee(employeeForm)"
+>
+  <div class="button__submit-container1">
+    <button class="button__submit" mat-raised-button routerLink="/">
+      Volver
+    </button>
+  </div>
+  <div class="form__layer">
+    <h1>Create New Employee</h1>
+
+    <div class="input__data">
+      <div class="form__input-name">
+        <label class="form__input-label" for="name">Name:</label>
+        <input
+          class="input-form"
+          type="text"
+          placeholder="Enter your Name"
+          id="name"
+          name="name"
+          [(ngModel)]="newEmployee.name"
+        />
+      </div>
+      <div class="form__input-position">
+        <label class="form__input-label" for="position">Position:</label>
+        <input
+          class="input-form"
+          type="text"
+          placeholder="Enter your Position"
+          id="position"
+          name="position"
+          [(ngModel)]="newEmployee.position"
+        />
+      </div>
+    </div>
+    <div class="form__input-office">
+      <label class="form__input-label" for="office">Office:</label>
+      <input
+        class="input-form"
+        type="text"
+        placeholder="Enter your Office"
+        id="office"
+        name="office"
+        [(ngModel)]="newEmployee.office"
+      />
+    </div>
+    <div class="form__input-salary">
+      <label class="form__input-label" for="salary">Salary:</label>
+      <input
+        class="input-form"
+        type="number"
+        placeholder="Enter your salary"
+        id="salary"
+        name="salary"
+        [(ngModel)]="newEmployee.salary"
+      />
+    </div>
+    <div class="button__submit-container">
+      <button type="submit" class="button__submit" mat-raised-button>
+        Save Employee
+      </button>
+    </div>
+  </div>
+</form>
